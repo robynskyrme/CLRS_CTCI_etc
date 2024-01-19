@@ -41,10 +41,12 @@ def isRotation(s1,s2):
         checkstring = s2[pos+2:length] + s2[0:pos]
 #        print(checkstring)
 
-    if isSubstring(s1,checkstring):
-        return True
-    else:
-        return False
+                            # This would be the "one call" to isSubstring except that it's in a for loop of potential substrings...
+        if isSubstring(s1,checkstring):
+            return True
+
+                            # If that never happens, it can't be a rotation
+    return False
 
 
 if __name__ == "__main__":
