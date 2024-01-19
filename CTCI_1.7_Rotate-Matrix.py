@@ -28,7 +28,10 @@ def RotateGrid(Image):
 
 ####### QUESTION: (part 2) Can you do this in place?
 
-
+                            # Yes. [To be coded later]
+                            # You take each the outer square, and swap pairs of diagonals except the NE + SW extremes
+                            # Repat for every inner circle until all pairs have swapped except the NE-SW line
+                            # Then, flip the image top-bottom
 
 
 
