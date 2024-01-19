@@ -1,4 +1,4 @@
-# 31.7.2023
+# 19.1.2024
 # CTCI Chapter 1 Q1.7
 
 ####### QUESTION: (part 1) Given an image of N x N, where each pixel is an integer, rotate the image 90 degrees.

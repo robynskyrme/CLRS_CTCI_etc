@@ -1,4 +1,4 @@
-# 11.8.2023
+# 19.1.2024
 # CTCI Chapter 2 Q2.2
 
 ####### QUESTION: Implement an algorithm to find the kth to last element of a singly linked list.

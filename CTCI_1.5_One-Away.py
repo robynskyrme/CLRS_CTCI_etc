@@ -1,11 +1,13 @@
-# 30.7.2023
+# 19.1.2024
 # CTCI Chapter 1 Q1.5
+
+# UNFINISHED
 
 ####### QUESTION: Given two strings, write a function to check if they are one edit (or zero edits) away.
 
 def OneAway(stringA,stringB):
     TotalEdits = 0
-                            # All further tests done having first checked that they are different:
+                            # first check that they *are* different:
     if stringA != stringB:
                             # First check: if they are the same length,
         if len(stringA) == len(stringB):

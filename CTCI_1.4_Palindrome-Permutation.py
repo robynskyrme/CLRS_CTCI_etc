@@ -1,4 +1,4 @@
-# 30.7.2023
+# 19.1.2024
 # CTCI Chapter 1 Q1.4
 
 ####### QUESTION: Given a string, write a function to check if it is a permutation of a palindrome.
@@ -14,12 +14,12 @@ def PalindromePermutationCheck(stringX):
     stringX = stringX.replace(" ","")
     tally = TallyChars(stringX)
 
-                            # Why not set it to True and switch it off when it encounters a counterexample
+                            # Tripwire: assume it's true, switch it off when it encounters a counterexample
     PalinPermutation = True
 
                             # Ok, so if the input string is of even length....
     if len(stringX) % 2 == 0:
-                            # Check that all characters appear an even number of times
+                            # ... check that all characters appear an even number of times
         AllEven = True
 
         for char in tally:
@@ -27,9 +27,10 @@ def PalindromePermutationCheck(stringX):
                 AllEven = False
                             # Convert that result to the final result
         PalinPermutation = AllEven
+
                             # Or, if it's of odd length...
     else:
-                            # There should be exactly 1 character which occurs exactly once. If that isn't true, we stop
+                            # ... there should be exactly 1 character which occurs exactly once. If that isn't true, we stop
         if tally.count(1) != 1:
             PalinPermutation = False
 
@@ -48,6 +49,7 @@ def TallyChars(stringX):
 
 
 if __name__ == "__main__":
-    stringA = "able was i ere i saw elba"
+                            # (should return true)
+    stringA = "bale bale saw saw i ere i [[]] fox fox fox fox"
 
     print(PalindromePermutationCheck(stringA))

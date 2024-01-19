@@ -1,4 +1,4 @@
-# 30.7.2023
+# 19.1.2024
 # CTCI Chapter 1 Q1.2
 
 ####### QUESTION: Given two strings, write a method to determine if one is a permutation of the other.
@@ -10,7 +10,7 @@ def CheckPermutation(stringA,stringB):
                             # Array will contain two elements, each being a list
     compare = []
 
-                            # Create both lists
+                            # Create and append both lists
                             # Each list is a simple tally of all characters from ASCII 0-255
     compare.append(TallyChars(stringA))
     compare.append(TallyChars(stringB))

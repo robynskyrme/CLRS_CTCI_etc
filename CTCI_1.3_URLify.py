@@ -1,15 +1,15 @@
-# 30.7.2023
+# 19.1.2024
 # CTCI Chapter 1 Q1.3
 
 ####### QUESTION: Write a method to replace all spaces in a string with '%20'
 
-                            # There is a simple library function in Python to do this: $string.replace(" ","%20")
-                            # Commented out working method using it, here:
+                            # There is a library function in Python to do this: $string.replace(" ","%20")
+                            # e.g.
 # def URLify(stringX):
 #     stringX = stringX.replace(" ","%20")
 #     return stringX
 
-                            # Here is another way:
+                            # Without using that function:
 
 def URLify(stringX):
                             # create empty string
@@ -26,6 +26,6 @@ def URLify(stringX):
     return newstring
 
 if __name__ == "__main__":
-    X = "THIS IS THE NEWS"
+    X = "What We Do Is Secret"
 
     print(URLify(X))
