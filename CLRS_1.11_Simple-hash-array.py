@@ -5,8 +5,8 @@
 
 table = []
 
-                            # Checks first character of value is a letter and treats it as if lowercase
-def ascii_lowercase(char):
+                            # Checks first character of value is a letter and treats it as if uppercsae
+def ascii_uppercase(char):
     ascii = ord(char)
     if ascii > 90:
         ascii -= 32
@@ -16,7 +16,7 @@ def ascii_lowercase(char):
 
     return ascii
 
-                            # Checks value isn't empty, takes output of ascii_lowercase and converts that to 0-25
+                            # Checks value isn't empty, takes output of ascii_uppercase and converts that to 0-25
 def get_index(value):
 
     if not value:
@@ -24,7 +24,7 @@ def get_index(value):
 
     firstchar = value[0]
 
-    ascii = ascii_lowercase(firstchar)
+    ascii = ascii_uppercase(firstchar)
 
     if not ascii:
         return None
